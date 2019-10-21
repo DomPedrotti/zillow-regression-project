@@ -43,4 +43,4 @@ def model_predictions(x_train, y_train, x_test, y_test, model_type = LinearRegre
     
     results = x_test.join(y_test)
     results['predicted'] = yhat
-    return results
+    return results, model_object
